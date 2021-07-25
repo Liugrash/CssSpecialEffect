@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <video autoplay muted loop src=" https://klxxcdn.oss-cn-hangzhou.aliyuncs.com/histudy/hrm/media/bg3.mp4">
+        </video>
+    </section>
+    <div>
+        <div class="content">
+            <h2>一劳动是写人生</h2>
+            <p>前端是一个非常深的行业</p>
+        </div>
+    </div>
+    <script>
+       let video =document.querySelector('video')
+       window.addEventListener('scroll',function(){
+           let value=1+window.scrollY/-500
+            video.style.opacity=value
+        })
+    </script>
+</body>
+</html>
